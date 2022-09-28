@@ -1,6 +1,6 @@
-{% set version = "2.0.0" %}
+{% set version = "3.1.1" %}
 {% set name = "GeomxTools" %}
-{% set bioc = "3.14" %}
+{% set bioc = "devel" %}
 
 package:
   name: 'bioconductor-{{ name|lower }}'
@@ -10,7 +10,7 @@ source:
     - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
     - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
-  md5: f027856bf0c1a50997c2e28dbe63be5c
+  md5: 42db2e77e93a9914bc6749b4d2631f03
 build:
   number: 0
   rpaths:
@@ -28,11 +28,13 @@ requirements:
     - r-data.table
     - r-dplyr
     - r-envstats
+    - r-ggally
     - r-lmertest
     - r-outliers
     - r-readxl
     - r-reshape2
     - r-rjson
+    - r-seuratobject
   run:
     - 'bioconductor-biobase >=2.54.0,<2.55.0'
     - 'bioconductor-biocgenerics >=0.40.0,<0.41.0'
@@ -42,11 +44,13 @@ requirements:
     - r-data.table
     - r-dplyr
     - r-envstats
+    - r-ggally
     - r-lmertest
     - r-outliers
     - r-readxl
     - r-reshape2
     - r-rjson
+    - r-seuratobject
 test:
   commands:
     - '$R -e "library(''{{ name }}'')"'
