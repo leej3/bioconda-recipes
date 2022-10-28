@@ -1,6 +1,6 @@
-{% set version = "1.2.0" %}
+{% set version = "1.4.0" %}
 {% set name = "NanoStringNCTools" %}
-{% set bioc = "3.14" %}
+{% set bioc = "3.15" %}
 
 package:
   name: 'bioconductor-{{ name|lower }}'
@@ -10,7 +10,7 @@ source:
     - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
     - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
-  md5: 9b8cf5c5153df98dbc84896162171a62
+  md5: 537807fcafd2acbddc25f9487c6ca99a
 build:
   number: 0
   rpaths:
