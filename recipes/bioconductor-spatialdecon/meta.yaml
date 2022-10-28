@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.4.3" %}
 {% set name = "SpatialDecon" %}
 {% set bioc = "3.14" %}
 
@@ -10,21 +10,30 @@ source:
     - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
     - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
-  md5: babc6db0904c7b023ccb471632c0f803
+  md5: 0249bfd07731f8ad3299be44692e768b
 build:
   number: 0
   rpaths:
     - lib/R/lib/
     - lib/
   noarch: generic
-# Suggests: testthat, knitr, rmarkdown
 requirements:
   host:
+    - bioconductor-biobase
+    - bioconductor-geomxtools
     - r-base
     - r-lognormreg
+    - r-matrix
+    - r-repmis
+    - r-seuratobject
   run:
+    - bioconductor-biobase
+    - bioconductor-geomxtools
     - r-base
     - r-lognormreg
+    - r-matrix
+    - r-repmis
+    - r-seuratobject
 test:
   commands:
     - '$R -e "library(''{{ name }}'')"'
