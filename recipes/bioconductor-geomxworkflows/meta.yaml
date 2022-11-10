@@ -23,7 +23,7 @@ requirements:
     - 'bioconductor-nanostringnctools >=1.2.0,<=1.4.0'
     - 'bioconductor-s4vectors >=0.32.0,<0.33.0'
     - 'bioconductor-biocstyle'
-    - 'bioconductor-geomxtools >=2.0.0,<3.2.0'
+    - 'bioconductor-geomxtools >=2.0.0,<=3.2.0'
     - r-base
     - r-data.table
     - r-dplyr
@@ -47,7 +47,7 @@ requirements:
     - 'bioconductor-nanostringnctools >=1.2.0,<=1.4.0'
     - 'bioconductor-s4vectors >=0.32.0,<0.33.0'
     - 'bioconductor-biocstyle'
-    - 'bioconductor-geomxtools >=2.0.0,<3.2.0'
+    - 'bioconductor-geomxtools >=2.0.0,<=3.2.0'
     - r-base
     - r-data.table
     - r-dplyr

@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - 'bioconductor-biobase >=2.54.0,<2.55.0'
-    - 'bioconductor-geomxtools >=2.0.0,<3.2.0'
+    - 'bioconductor-geomxtools >=2.0.0,<=3.2.0'
     - 'bioconductor-nanostringnctools >=1.2.0,<=1.4.0'
     - r-base
     - r-lme4
@@ -36,7 +36,7 @@ requirements:
     - liblapack
   run:
     - 'bioconductor-biobase >=2.54.0,<2.55.0'
-    - 'bioconductor-geomxtools >=2.0.0,<3.2.0'
+    - 'bioconductor-geomxtools >=2.0.0,<=3.2.0'
     - 'bioconductor-nanostringnctools >=1.2.0,<=1.4.0'
     - r-base
     - r-lme4

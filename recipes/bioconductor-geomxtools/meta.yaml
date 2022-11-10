@@ -1,6 +1,6 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 {% set name = "GeomxTools" %}
-{% set bioc = "devel" %}
+{% set bioc = "3.16" %}
 
 package:
   name: 'bioconductor-{{ name|lower }}'
@@ -10,9 +10,9 @@ source:
     - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
     - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
-  md5: 42db2e77e93a9914bc6749b4d2631f03
+  md5: cbfe2461c03f5e985f813a7fc41111e5
 build:
-  number: 3
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
