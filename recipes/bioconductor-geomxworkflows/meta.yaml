@@ -10,7 +10,7 @@ source:
     - 'https://bioconductor.org/packages/{{ bioc }}/workflows/src/contrib/{{ name }}_{{ version }}.tar.gz'
   md5: 9655a523bd31ff368301d5a282a0c46d
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
